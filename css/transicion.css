@@ -1,0 +1,54 @@
+body, html{
+  margin: 0;
+  height: 100%;
+}
+
+.contenedor{
+  overflow: hidden;
+  height: 100%;
+}
+
+.contenedor:hover{
+  border: 10px solid red;
+}
+
+.imagen{
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  height: 100%;
+  transition: transform 2s;
+}
+
+.imagen:hover{
+  transform: scale(1.4);
+}
+
+.texto{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: rotate(-360deg);
+  transition: all	1s;
+}
+
+.texto:hover{
+  transform: rotate(0deg);
+  opacity: 100;
+}
+
+h2{
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+/*h2{
+  width: 300px;
+  transform: rotate(-90deg) scale(.2);
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}*/
